@@ -23,6 +23,5 @@
 ## Start the Elixir shell
 -noshell
 -user Elixir.IEx.CLI
-#-extra --no-halt
--extra
+-extra --no-halt
 
