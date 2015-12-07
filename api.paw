@@ -69,14 +69,14 @@
     </object>
     <object type="LMREQUEST" id="z103">
         <attribute name="uuid" type="string">298DA05E-3169-4748-8CB9-C5AF9EAF24DD</attribute>
-        <attribute name="url" type="string">http://pi:4000/activate</attribute>
+        <attribute name="url" type="string">http://garage:4000/activate</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
         <attribute name="redirectauthorization" type="bool">0</attribute>
         <attribute name="method" type="string">POST</attribute>
         <attribute name="followredirects" type="bool">0</attribute>
-        <attribute name="body" type="string">[{"data":{"json":"{\\"pin\\":\\"0000\\"}"},"identifier":"com.luckymarmot.JSONDynamicValue"}]</attribute>
+        <attribute name="body" type="string">[{"data":{"json":"{\\"code\\":\\"0427\\"}"},"identifier":"com.luckymarmot.JSONDynamicValue"}]</attribute>
         <attribute name="order" type="int64">0</attribute>
         <attribute name="name" type="string">My API</attribute>
         <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>

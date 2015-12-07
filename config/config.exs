@@ -28,5 +28,10 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
-config :ethernet, interface: "eth0", hostname: "pi"
-config :codelock, pin: "0000"
+config :ethernet,
+  interface: "eth0",
+  hostname: "garage"
+
+config :codelock,
+  code: "0000",
+  gpio_pin: 18

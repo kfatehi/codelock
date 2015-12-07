@@ -11,8 +11,8 @@ defmodule Codelock.Router do
   end
 
   post "/activate" do
-    %{"pin" => pin} = conn.params
-    if Codelock.Pinpad.unlock(pin) do
+    %{"code" => code} = conn.params
+    if Codelock.Pinpad.unlock(code) do
       send_resp(conn, 200, "")
     else
       send_resp(conn, 401, "")
@@ -26,11 +26,10 @@ end
 
 defmodule Codelock.Pinpad do
 
-  # @gpio_pin 18
-  @gpio_pin 60
-  @pin Application.get_env :codelock, :pin, "0000"
+  @gpio_pin Application.get_env :codelock, :gpio_pin
+  @code Application.get_env :codelock, :code, "0000"
 
-  def unlock(@pin) do
+  def unlock(@code) do
     {:ok, pid} = Gpio.start_link(@gpio_pin, :output)
     Gpio.write(pid, 1)
     IO.puts "Opened"
