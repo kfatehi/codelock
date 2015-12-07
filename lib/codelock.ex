@@ -25,7 +25,6 @@ defmodule Codelock.Router do
 end
 
 defmodule Codelock.Pinpad do
-  require Gpio
 
   # @gpio_pin 18
   @gpio_pin 60
