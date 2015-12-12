@@ -119,14 +119,14 @@
     </object>
     <object type="LMREQUEST" id="z109">
         <attribute name="uuid" type="string">F8CF68B3-09AC-47BE-B041-4C65AFA5B9D3</attribute>
-        <attribute name="url" type="string">http://garage:4000/digital_read/4</attribute>
+        <attribute name="url" type="string">http://localhost:4000/digital_read/4</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
         <attribute name="redirectauthorization" type="bool">0</attribute>
         <attribute name="method" type="string">POST</attribute>
         <attribute name="followredirects" type="bool">0</attribute>
-        <attribute name="body" type="string">[{"data":{"json":"{\\"code\\":\\"0000\\",\\"value\\":\\"1\\"}"},"identifier":"com.luckymarmot.JSONDynamicValue"}]</attribute>
+        <attribute name="body" type="string">[{"data":{"json":"{}"},"identifier":"com.luckymarmot.JSONDynamicValue"}]</attribute>
         <attribute name="order" type="int64">1</attribute>
         <attribute name="name" type="string">Read pin 4</attribute>
         <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>

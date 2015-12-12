@@ -11,7 +11,7 @@ defmodule Codelock.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :elixir_ale, :ethernet, :poison, :plug, :cowboy],
+    [applications: [:logger, :elixir_ale, :ethernet, :poison, :plug, :cowboy, :corsica],
      mod: {Codelock, {}}]
   end
 
@@ -22,7 +22,8 @@ defmodule Codelock.Mixfile do
       { :ethernet, git: "https://github.com/cellulose/ethernet.git" },
       { :cowboy, "~> 1.0.0" },
       { :plug, "~> 1.0" },
-      { :poison, "~> 1.5" }
+      { :poison, "~> 1.5" },
+      { :corsica, "~> 0.4" }
     ]
   end
 end

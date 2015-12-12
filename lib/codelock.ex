@@ -28,5 +28,4 @@ defmodule Codelock do
     IO.puts "Hello Nerves"
     Codelock.Supervisor.start_link
   end
-
 end
