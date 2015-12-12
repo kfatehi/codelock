@@ -33,5 +33,4 @@ config :ethernet,
   hostname: "garage"
 
 config :codelock,
-  code: "0000",
-  gpio_pin: 18
+  code: "0000"
