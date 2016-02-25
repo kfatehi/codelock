@@ -1,5 +1,6 @@
 defmodule Codelock.Router do
   use Plug.Router
+  use Plug.Debugger
 
   plug Plug.Logger
   plug Corsica, origins: "*"
