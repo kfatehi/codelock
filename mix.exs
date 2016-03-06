@@ -20,8 +20,8 @@ defmodule Codelock.Mixfile do
       { :exrm, "~> 0.15.0" },
       { :elixir_ale, "~> 0.4.0" },
       { :ethernet, git: "https://github.com/cellulose/ethernet.git" },
-      { :cowboy, "~> 1.0.0" },
-      { :plug, "~> 1.0" },
+      { :cowboy, "~> 1.0.4" },
+      { :plug, "~> 1.1.2" },
       { :poison, "~> 1.5" },
       { :corsica, "~> 0.4" }
     ]
