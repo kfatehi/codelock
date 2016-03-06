@@ -3,7 +3,7 @@ defmodule Codelock.Router do
   use Plug.Debugger
 
   plug Plug.Logger
-  plug Corsica, origins: "*"
+  plug Corsica, origins: "*", allow_headers: ["accept", "content-type"]
   plug :match
   plug Plug.Parsers, parsers: [:urlencoded, :json], json_decoder: Poison
   plug :dispatch
